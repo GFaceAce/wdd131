@@ -35,10 +35,15 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
-nav a {
-    padding: 20px;
-    color: white;
+.hide {
     display: none;
+}
+nav a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 nav a:hover {
     text-decoration: none;
@@ -65,7 +70,27 @@ img {
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
-          
+
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 17vh;
+    right: 0vw;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}          
 
 @media screen and (min-width: 700px) {
     main {
@@ -80,6 +105,9 @@ img {
     }
       .menu-btn {
         display: none;
+    }
+    nav.hide {
+        display: block;
     }
     nav a {
         display: inline;
