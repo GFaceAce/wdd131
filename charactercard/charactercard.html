@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Character Card</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="A character card demonstrating leveling up and taking damage.">
+    <meta property="og:url" content="https://yourusername.github.io/wdd131/charactercard/">
+    <meta property="og:image" content="social.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="A character card demonstrating leveling up and taking damage.">
+    <meta name="twitter:image" content="social.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="card">
+            <img
+                id="image"
+                src="character.jpg"
+                alt="Character portrait"
+            >
+
+            <h1 id="name">Snortleblat</h1>
+
+            <div class="stats">
+                <p><strong>Class:</strong> <span id="character-class">Swamp Beast Diplomat</span></p>
+                <p><strong>Level:</strong> <span id="character-level">5</span></p>
+                <p><strong>Health:</strong> <span id="character-health">100</span></p>
+            </div>
+
+            <div class="buttons">
+                <button id="level-up-btn" type="button">
+                    Level Up
+                </button>
+
+                <button id="attack-btn" type="button">
+                    Attacked
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
