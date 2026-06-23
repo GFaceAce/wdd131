@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+.container {
+  width: min(1000px, 90%);
+  margin: 2rem auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 90px;
+}
+
+header span {
+  font-family: "Amatic SC", cursive;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.search-form {
+  display: flex;
+  border: 2px solid #777;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.search-form input {
+  flex: 1;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.search-form input:focus {
+  outline: none;
+}
+
+.search-form button {
+  background: white;
+  border: none;
+  border-left: 2px solid #777;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.search-form button img {
+  width: 28px;
+  height: 28px;
+}
+
+main {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #777;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.recipe-image {
+  width: 100%;
+  display: block;
+}
+
+.recipe-content {
+  padding: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.recipe-title {
+  display: block;
+  text-decoration: none;
+  color: #1e73be;
+  font-family: "Amatic SC", cursive;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  display: none;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+footer a {
+  color: #0066cc;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 700px) {
+  .recipe-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .recipe-image {
+    width: 45%;
+    max-width: 300px;
+  }
+
+  .recipe-content {
+    flex: 1;
+    padding: 0;
+  }
+
+  .description {
+    display: block;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
