@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="styles/site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Doors Project Plan</h1>
+			<h2>Grace Rawlings</h2>
+			<h2>WDD 131</h2>
+		</header>
+		<main>
+			
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>This website is a quick and simple game about making random choices. Users are presented with a choice of two doors, where one ends their run and the other continues it.</p>
+
+			<h3>Audience</h3>
+			<p>This website is aimed at anyone wanting to play an easy game. Because this is a game of luck, it may be especially suitable for gamers who need a break from skill-based games.</p>
+
+			<h3>Dynamic elements</h3>
+			<p>JavaScript will be used to randomly determine which of the two doors is safe each round. Arrays will store the possible door images, and objects will be used to keep track of game data such as the current room and high score. Event listeners will detect when the player clicks a door, update the page using DOM manipulation, display the result, and either advance the player to the next room or end the game. Conditional statements will determine whether the player continues or loses, and the high score will be updated whenever a new record is reached.</p>
+
+			<hr />
+			
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+
+			Palette URL:
+			<a
+				href="https://coolors.co/e8c547-fe5d26-2d3047-cdd1c4"
+				target="_blank"
+				>https://coolors.co/e8c547-fe5d26-2d3047-cdd1c4</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Primary</th>
+						<th>Secondary</th>
+						<th>Accent 1</th>
+						<th>Accent 2</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#CDD1C4]</td>
+						<td class="secondary">[#2D3047]</td>
+						<td class="accent1">[#E8C547]</td>
+						<td class="accent2"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Pseudocode for your project</h3>
+
+			<p>
+                The website will initialize by displaying two doors and the room number (1) (the highscore will be invisible until they lose for the first time). 
+                It will then wait for the player to click on a door, then it will decide which door is safe. 
+                If the selected door is safe, it will increase the room number by 1 and display 2 new random doors. 
+                If the selected door leads to doom, it will send a "Game Over" alert, show their final room number (if this is the first time they lose, or if they beat their previous high score, then it will say "New High Score"), and display a button that allows them to restart. 
+                When the restart button is pressed, it will reset the room number, display the current high score in the corner, and show 2 new random doors. 
+			</p>
+
+			<h3>Wireframes</h3>
+			<p>
+				<img src="images/image.png" alt="Wireframe showing the layout of the Doors game.">
+			</p>
+
+			<h3>Landing page</h3>
+			<p>
+				Before the user loses for the first time, the "High Score" box will not be visible. 
+			</p>
+		</main>
+	</body>
+</html>
