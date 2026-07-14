@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #CDD1C4;
+    --secondary-color: #2D3047;
+    --accent-color: #E8C547;
+    --text-color: white;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.display {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 140px;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-size: 2rem;
+    margin: .5rem 0 0;
+}
+
+#game-space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.door {
+    width: 150px;
+    height: 250px;
+    cursor: pointer;
+}
+
+#restart {
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#restart-holder {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        padding: 2rem;
+    }
+
+    .display {
+        width: 180px;
+        padding: 1.5rem;
+    }
+
+    #game-space {
+        gap: 8rem;
+    }
+
+    .door {
+        width: 250px;
+        height: 400px;
+    }
+}
